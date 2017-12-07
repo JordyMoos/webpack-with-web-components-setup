@@ -1,0 +1,9 @@
+{
+  "name": "webpack-with-webcomponents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
