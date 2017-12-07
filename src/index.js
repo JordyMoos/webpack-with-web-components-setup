@@ -1,0 +1,1 @@
+import '../bower_components/paper-input/paper-input.html';
