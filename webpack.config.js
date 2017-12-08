@@ -40,7 +40,7 @@ module.exports = {
           loader: 'elm-webpack-loader',
           options: {
             debug: true,
-            warn: true,
+            warn: false,
           },
         },
       },
