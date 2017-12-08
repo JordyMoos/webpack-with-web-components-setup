@@ -27,4 +27,8 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    div [] [ text "Hello from Elm!" ]
+    div
+        []
+        [ h1 [] [ text "Webpack with web components" ]
+        , node "paper-input" [] []
+        ]
