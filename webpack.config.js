@@ -36,13 +36,18 @@ module.exports = {
       },
       {
         test: /\.elm$/,
-        use: {
-          loader: 'elm-webpack-loader',
-          options: {
-            debug: true,
-            warn: false,
+        use: [
+          {
+            loader: 'elm-hot-loader'
           },
-        },
+          {
+            loader: 'elm-webpack-loader',
+            options: {
+              debug: true,
+              warn: false,
+            },
+          },
+        ],
       },
     ],
   },
@@ -60,6 +65,8 @@ module.exports = {
       from: path.resolve(__dirname, 'bower_components/webcomponentsjs/*.js'),
       to: 'bower_components/webcomponentsjs/[name].[ext]',
     }]),
+    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
 };
