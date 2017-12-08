@@ -33,6 +33,16 @@ module.exports = {
           'polymer-webpack-loader',
         ],
       },
+      {
+        test: /\.elm$/,
+        use: {
+          loader: 'elm-webpack-loader',
+          options: {
+            debug: true,
+            warn: true,
+          },
+        },
+      },
     ],
   },
   plugins: [

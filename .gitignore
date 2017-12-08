@@ -1,5 +1,7 @@
 node_modules
 bower_components
-.idea
+elm-stuff
 
 dist
+
+.idea
